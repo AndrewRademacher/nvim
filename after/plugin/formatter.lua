@@ -6,7 +6,7 @@ require("formatter").setup({
 
 	filetype = {
 		lua = { require("formatter.filetypes.lua").stylua },
-		rust = { require("formatter.filetypes.lua").rustfmt },
+		rust = { require("formatter.filetypes.rust").rustfmt },
 		python = { require("formatter.filetypes.python").black },
 	},
 
