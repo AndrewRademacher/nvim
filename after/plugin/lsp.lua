@@ -11,6 +11,7 @@ lsp.ensure_installed({
 	"lua_ls",
 	"pylyzer",
 	"rust_analyzer",
+	"texlab",
 })
 
 -- (Optional) Configure lua language server for neovim
