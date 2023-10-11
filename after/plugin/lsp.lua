@@ -9,7 +9,7 @@ end)
 lsp.ensure_installed({
 	"julials",
 	"lua_ls",
-	"pylyzer",
+	"jedi_language_server",
 	"rust_analyzer",
 	"texlab",
 })
