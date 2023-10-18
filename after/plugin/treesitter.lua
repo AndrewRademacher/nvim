@@ -12,6 +12,7 @@ require("nvim-treesitter.configs").setup({
 		"rust",
 		"sql",
 		"toml",
+		"zig",
 	},
 
 	-- Install parsers synchronously (only applied to `ensure_installed`)

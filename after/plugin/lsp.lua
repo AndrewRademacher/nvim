@@ -12,6 +12,7 @@ lsp.ensure_installed({
 	"jedi_language_server",
 	"rust_analyzer",
 	"texlab",
+	"zls",
 })
 
 -- (Optional) Configure lua language server for neovim
