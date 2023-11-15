@@ -60,4 +60,10 @@ return require("packer").startup(function(use)
 	})
 
 	use("m4xshen/autoclose.nvim")
+
+	use({ "edluffy/hologram.nvim" })
+
+	use({ "folke/trouble.nvim" })
+
+	use("nvim-tree/nvim-web-devicons")
 end)
