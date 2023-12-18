@@ -8,7 +8,7 @@ mason.setup({
 })
 
 if not registry.is_installed("stylua") then
-	mason.install("stylua")
+	registry.get_package("stylua"):install()
 end
 
 if not registry.is_installed("codelldb") then
