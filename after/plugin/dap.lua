@@ -1,4 +1,6 @@
 local dap = require("dap")
+local string = require("string")
+local table = require("table")
 
 dap.adapters.codelldb = {
 	type = "server",
@@ -18,7 +20,14 @@ local codelldb = {
 	end,
 	cwd = "${workspaceFolder}",
 	stopOnEntry = false,
-	args = { "verify-number", "-v", "35" },
+	args = function()
+		local args = {}
+		local args_string = vim.fn.input("Args: ")
+		for w in args_string:gmatch("%S+") do
+			table.insert(args, w)
+		end
+		return args
+	end,
 	runInTerminal = false,
 }
 
