@@ -7,9 +7,9 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.ensure_installed({
+	"jedi_language_server",
 	"julials",
 	"lua_ls",
-	"jedi_language_server",
 	"rust_analyzer",
 	"texlab",
 	"zls",

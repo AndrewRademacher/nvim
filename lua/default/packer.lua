@@ -67,6 +67,9 @@ return require("packer").startup(function(use)
 
 	use("nvim-tree/nvim-web-devicons")
 
+	-- Markdown notebook
+	use("jakewvincent/mkdnflow.nvim")
+
 	-- DAP TOOLS
 	use("mfussenegger/nvim-dap")
 	use("theHamsta/nvim-dap-virtual-text")
