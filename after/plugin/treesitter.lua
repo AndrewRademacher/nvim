@@ -12,6 +12,7 @@ require("nvim-treesitter.configs").setup({
 		"rust",
 		"sql",
 		"toml",
+		"wgsl",
 		"zig",
 	},
 
