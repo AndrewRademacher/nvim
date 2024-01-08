@@ -1,58 +1,60 @@
-require("lazy").setup({
-	{ "rose-pine/neovim", name = "rose-pine" },
+require("lazy").setup("default/plugin")
 
-	{
-		"nvim-telescope/telescope.nvim",
-		tag = "0.1.5",
-		-- or                            , branch = '0.1.x',
-		dependencies = { "nvim-lua/plenary.nvim" },
-		keys = {
-			"<leader>ff",
-		},
-	},
-	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
-	"mbbill/undotree",
-	"tpope/vim-fugitive",
-
-	-- LSP Zero
-	"williamboman/mason.nvim",
-	"williamboman/mason-lspconfig.nvim",
-	{ "VonHeikemen/lsp-zero.nvim", branch = "v3.x" },
-	{ "neovim/nvim-lspconfig" },
-	{ "hrsh7th/cmp-nvim-lsp" },
-	{ "hrsh7th/nvim-cmp" },
-	{ "L3MON4D3/LuaSnip" },
-
-	"mhartington/formatter.nvim",
-
-	{
-		"smoka7/hop.nvim",
-		version = "*", -- optional but strongly recommended
-		config = { keys = "etovxqpdygfblzhckisuran" },
-	},
-
-	-- LuaLine
-	{
-		"nvim-lualine/lualine.nvim",
-	},
-	{ "nvim-tree/nvim-web-devicons", lazy = true },
-
-	"m4xshen/autoclose.nvim",
-
-	"edluffy/hologram.nvim",
-
-	"folke/trouble.nvim",
-
-	"nvim-tree/nvim-web-devicons",
-
-	-- Markdown Notebook
-	"jakewvincent/mkdnflow.nvim",
-
-	-- DAP TOOLS
-	"mfussenegger/nvim-dap",
-	"theHamsta/nvim-dap-virtual-text",
-	"rcarriga/nvim-dap-ui",
-})
+--require("lazy").setup({
+--	{ "rose-pine/neovim", name = "rose-pine" },
+--
+--	{
+--		"nvim-telescope/telescope.nvim",
+--		tag = "0.1.5",
+--		-- or                            , branch = '0.1.x',
+--		dependencies = { "nvim-lua/plenary.nvim" },
+--		keys = {
+--			"<leader>ff",
+--		},
+--	},
+--	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+--	"mbbill/undotree",
+--	"tpope/vim-fugitive",
+--
+--	-- LSP Zero
+--	"williamboman/mason.nvim",
+--	"williamboman/mason-lspconfig.nvim",
+--	{ "VonHeikemen/lsp-zero.nvim", branch = "v3.x" },
+--	{ "neovim/nvim-lspconfig" },
+--	{ "hrsh7th/cmp-nvim-lsp" },
+--	{ "hrsh7th/nvim-cmp" },
+--	{ "L3MON4D3/LuaSnip" },
+--
+--	"mhartington/formatter.nvim",
+--
+--	{
+--		"smoka7/hop.nvim",
+--		version = "*", -- optional but strongly recommended
+--		config = { keys = "etovxqpdygfblzhckisuran" },
+--	},
+--
+--	-- LuaLine
+--	{
+--		"nvim-lualine/lualine.nvim",
+--	},
+--	{ "nvim-tree/nvim-web-devicons" },
+--
+--	"m4xshen/autoclose.nvim",
+--
+--	"edluffy/hologram.nvim",
+--
+--	"folke/trouble.nvim",
+--
+--	"nvim-tree/nvim-web-devicons",
+--
+--	-- Markdown Notebook
+--	"jakewvincent/mkdnflow.nvim",
+--
+--	-- DAP TOOLS
+--	"mfussenegger/nvim-dap",
+--	"theHamsta/nvim-dap-virtual-text",
+--	"rcarriga/nvim-dap-ui",
+--})
 
 -- -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
