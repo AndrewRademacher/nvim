@@ -14,3 +14,8 @@ vim.opt.rtp:prepend(lazypath)
 require("default.remap")
 require("default.lazy")
 require("default.set")
+
+-- custom filetypes
+vim.cmd([[
+    autocmd BufEnter *.ers  setlocal filetype=rustscript
+]])

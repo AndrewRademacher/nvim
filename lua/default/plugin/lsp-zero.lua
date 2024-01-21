@@ -45,6 +45,45 @@ return {
 					end,
 				},
 			})
+
+			-- rustscript
+			local lspconfig = require("lspconfig")
+			local lsp_configs = require("lspconfig.configs")
+			if not lsp_configs.rlscls then
+				lsp_configs.rlscls = {
+					default_config = {
+						cmd = { "rscls" },
+						filetypes = { "rustscript" },
+						root_dir = function(fname)
+							return lspconfig.util.path.dirname(fname)
+						end,
+					},
+				}
+			end
+
+			lspconfig.rlscls.setup({
+				settings = {
+					["rust-analyzer"] = {
+						imports = {
+							group = {
+								enable = true,
+							},
+							granularity = {
+								enforce = true,
+								group = "crate",
+							},
+						},
+						cargo = {
+							buildScripts = {
+								enable = true,
+							},
+						},
+						procMacro = {
+							enable = true,
+						},
+					},
+				},
+			})
 		end,
 	},
 	{ "hrsh7th/cmp-nvim-lsp" },

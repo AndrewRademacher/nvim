@@ -10,6 +10,7 @@ return {
 			filetype = {
 				lua = { require("formatter.filetypes.lua").stylua },
 				rust = { require("formatter.filetypes.rust").rustfmt },
+				rustscript = { require("formatter.filetypes.rust").rustfmt },
 				python = { require("formatter.filetypes.python").black },
 			},
 
