@@ -24,7 +24,7 @@ return {
 		"williamboman/mason-lspconfig.nvim",
 		config = {
 			ensure_installed = {
-				"jedi_language_server",
+				"pylyzer",
 				"julials",
 				"lua_ls",
 				"rust_analyzer",
