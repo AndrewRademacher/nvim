@@ -9,6 +9,7 @@ return {
 					"bash",
 					"c",
 					"cpp",
+					"glsl",
 					"hcl",
 					"julia",
 					"latex",
