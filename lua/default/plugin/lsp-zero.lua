@@ -29,7 +29,7 @@ return {
 
 			require("mason-lspconfig").setup({
 				ensure_installed = {
-					"pylyzer",
+					"jedi_language_server",
 					"lua_ls",
 					"rust_analyzer",
 					"texlab",
