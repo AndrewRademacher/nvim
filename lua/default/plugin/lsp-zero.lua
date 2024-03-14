@@ -30,7 +30,6 @@ return {
 			require("mason-lspconfig").setup({
 				ensure_installed = {
 					"pylyzer",
-					"julials",
 					"lua_ls",
 					"rust_analyzer",
 					"texlab",
