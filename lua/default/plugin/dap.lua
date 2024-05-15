@@ -34,6 +34,9 @@ return {
 				runInTerminal = false,
 			}
 
+			dap.configurations.c = {
+				codelldb,
+			}
 			dap.configurations.rust = {
 				codelldb,
 			}
@@ -55,6 +58,7 @@ return {
 			dapui.setup()
 
 			vim.keymap.set("n", "<leader>du", dapui.toggle)
+			vim.keymap.set("n", "<leader>dg", dapui.open)
 		end,
 	},
 }
