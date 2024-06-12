@@ -40,6 +40,9 @@ return {
 			dap.configurations.rust = {
 				codelldb,
 			}
+			dap.configurations.zig = {
+				codelldb,
+			}
 
 			-- vim.keymap -- no map by default
 			vim.keymap.set("n", "<leader>dr", dap.continue)
