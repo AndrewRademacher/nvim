@@ -11,6 +11,7 @@ return {
 					"cpp",
 					"glsl",
 					"hcl",
+					"hlsl",
 					"julia",
 					"latex",
 					"lua",
