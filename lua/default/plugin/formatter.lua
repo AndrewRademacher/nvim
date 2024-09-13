@@ -20,10 +20,10 @@ return {
 		})
 
 		vim.cmd([[
-        augroup FormatAutogroup
-        autocmd!
-        autocmd BufWritePost * FormatWrite
-        augroup END
+	        augroup FormatAutogroup
+	        autocmd!
+	        autocmd BufWritePost * FormatWrite
+	        augroup END
         ]])
 	end,
 }

@@ -11,9 +11,8 @@ return {
 					"cpp",
 					"glsl",
 					"hcl",
-					"hlsl",
 					"julia",
-					"latex",
+					--"latex", -- depends on Node.JS for unexplained reason.
 					"lua",
 					"python",
 					"rust",
