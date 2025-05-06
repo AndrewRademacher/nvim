@@ -12,6 +12,7 @@ return {
 				rust = { require("formatter.filetypes.rust").rustfmt },
 				rustscript = { require("formatter.filetypes.rust").rustfmt },
 				python = { require("formatter.filetypes.python").black },
+				zig = { require("formatter.filetypes.zig").zigfmt },
 			},
 
 			["*"] = {
