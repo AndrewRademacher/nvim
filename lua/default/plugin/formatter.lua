@@ -9,7 +9,16 @@ return {
 
 			filetype = {
 				lua = { require("formatter.filetypes.lua").stylua },
-				rust = { require("formatter.filetypes.rust").rustfmt },
+				rust = {
+					function()
+						return {
+							exe = "rustfmt",
+							args = { "--edition 2024" },
+							stdin = true,
+						}
+					end,
+				},
+				-- rust = { require("formatter.filetypes.rust").rustfmt, args = { "--edition 2024" } },
 				rustscript = { require("formatter.filetypes.rust").rustfmt },
 				python = { require("formatter.filetypes.python").black },
 				zig = { require("formatter.filetypes.zig").zigfmt },
