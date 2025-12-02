@@ -1,28 +1,28 @@
-return {
-	"olimorris/codecompanion.nvim",
-	dependencies = {
-		"nvim-lua/plenary.nvim",
-		"nvim-treesitter/nvim-treesitter",
-	},
-	opts = {
-		-- NOTE: The log_level is in `opts.opts`
-		strategies = {
-			chat = {
-				name = "copilot",
-				adapter = "anthropic",
-				model = "claude-sonnet-4-5-20250929",
-			},
-			inline = {
-				adapter = "anthropic",
-				model = "claude-sonnet-4-5-20250929",
-			},
-			cmd = {
-				adapter = "anthropic",
-				model = "claude-sonnet-4-5-20250929",
-			},
-		},
-		opts = {
-			log_level = "DEBUG", -- or "TRACE"
-		},
-	},
-}
+-- return {
+-- 	"olimorris/codecompanion.nvim",
+-- 	dependencies = {
+-- 		"nvim-lua/plenary.nvim",
+-- 		"nvim-treesitter/nvim-treesitter",
+-- 	},
+-- 	opts = {
+-- 		-- NOTE: The log_level is in `opts.opts`
+-- 		strategies = {
+-- 			chat = {
+-- 				name = "copilot",
+-- 				adapter = "anthropic",
+-- 				model = "claude-sonnet-4-5-20250929",
+-- 			},
+-- 			inline = {
+-- 				adapter = "anthropic",
+-- 				model = "claude-sonnet-4-5-20250929",
+-- 			},
+-- 			cmd = {
+-- 				adapter = "anthropic",
+-- 				model = "claude-sonnet-4-5-20250929",
+-- 			},
+-- 		},
+-- 		opts = {
+-- 			log_level = "DEBUG", -- or "TRACE"
+-- 		},
+-- 	},
+-- }
